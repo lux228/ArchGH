@@ -2,7 +2,7 @@
 set -e
 
 # Install yay from built package
-pacman -U yay-12.5.0-1-x86_64.pkg.tar.zst
+pacman -U root/yay-12.5.0-1-x86_64.pkg.tar.zst
 
 echo "[*] Setting up fish shell with starship prompt..."
 
