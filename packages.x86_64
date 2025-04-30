@@ -59,3 +59,4 @@ qemu-guest-agent
 virtualbox-guest-utils-nox
 
 # AUR helper (installed via custom repo /root/yay)
+yay
