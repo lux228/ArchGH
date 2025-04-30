@@ -1,15 +1,22 @@
 #!/usr/bin/env bash
 set -e
 
-echo "Installing yay from AUR..."
+echo "Creating build user for yay..."
 
-# Create working directory for yay
-cd /opt
-git clone https://aur.archlinux.org/yay.git
-chown -R root:root yay
+# Create a non-root user just for yay build
+useradd -m -G wheel yaybuilder
+echo 'yaybuilder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers.d/yaybuilder
+
+# Build yay as non-root user
+cd /home/yaybuilder
+sudo -u yaybuilder git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si --noconfirm
+sudo -u yaybuilder makepkg -si --noconfirm
 cd ..
 rm -rf yay
 
-echo "yay installed successfully."
+# Clean up
+userdel -r yaybuilder
+rm -f /etc/sudoers.d/yaybuilder
+
+echo "yay installed successfully!"
