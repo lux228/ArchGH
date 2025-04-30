@@ -53,6 +53,7 @@ fish
 starship
 neofetch
 tmux
+btop
 
 # Virtual machine support
 qemu-guest-agent
