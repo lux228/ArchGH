@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-# Install yay from built package
-pacman -U --noconfirm root/yay-12.5.0-1-x86_64.pkg.tar.zst
-
 echo "[*] Setting up fish shell with starship prompt..."
 
 # Change default shell to fish for root
