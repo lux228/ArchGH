@@ -1,2 +1,12 @@
 arch-install-scripts
 base
+whiptail
+dhclient
+wpa_supplicant
+mc
+nano
+iw
+networkmanager
+net-tools
+libnetwt
+dialog
