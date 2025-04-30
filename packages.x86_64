@@ -58,6 +58,5 @@ tmux
 qemu-guest-agent
 virtualbox-guest-utils-nox
 
-# AUR helper (installed via customize_airootfs.sh)
-# yay will be added manually, not from pacman
-base-devel
+# AUR helper (installed via custom repo /root/yay)
+yay
