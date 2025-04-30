@@ -58,3 +58,6 @@ btop
 # Virtual machine support
 qemu-guest-agent
 virtualbox-guest-utils-nox
+
+# yay
+yay
