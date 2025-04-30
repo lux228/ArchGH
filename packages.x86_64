@@ -36,7 +36,6 @@ ntfs-3g
 
 # Graphical environment (KDE Plasma)
 plasma
-plasma-wayland-session
 xorg-server
 xorg-xwayland
 sddm
