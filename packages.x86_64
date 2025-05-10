@@ -125,3 +125,21 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+# Desktop Environment
+plasma-meta
+plasma-wayland-session
+sddm
+sddm-kcm
+
+# Terminal and Shell
+fish
+starship
+
+# AUR Helper Dependencies
+base-devel
+git
+
+# Additional Tools
+btop
+fastfetch
