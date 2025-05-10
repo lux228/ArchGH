@@ -34,4 +34,11 @@ sudo -u builder makepkg -si --noconfirm
 cd /
 rm -rf /tmp/yay
 userdel -r builder
-rm /etc/sudoers.d/builder 
+rm /etc/sudoers.d/builder
+
+# Copy branding assets
+mkdir -p /usr/share/wallpapers/AGH
+cp /root/Branding/wallpaper.jpg /usr/share/wallpapers/AGH/wallpaper.jpg
+cp /root/Branding/logo.png /usr/share/wallpapers/AGH/logo.png
+cp /root/Branding/logo.svg /usr/share/wallpapers/AGH/logo.svg
+cp /root/Branding/grub.xpm.gz /grub.xpm.gz 
