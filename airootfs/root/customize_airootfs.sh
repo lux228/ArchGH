@@ -11,8 +11,8 @@ systemctl enable NetworkManager.service
 
 # Set up starship for root
 mkdir -p /root/.config
-cp /etc/skel/.config/starship.toml /root/.config/
-cp /etc/skel/.config/fish/config.fish /root/.config/fish/
+cp /etc/skel/.config/starship.toml /root/.config/.
+cp /etc/skel/.config/fish/config.fish /root/.config/.
 
 # Set fish as default shell for root
 chsh -s /usr/bin/fish root
