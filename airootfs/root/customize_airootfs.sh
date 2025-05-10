@@ -4,10 +4,10 @@
 chsh -s /usr/bin/fish archiso
 
 # Enable SDDM
-systemctl enable sddm.service
+systemctl enable sddm.service --now
 
 # Enable NetworkManager
-systemctl enable NetworkManager.service
+systemctl enable NetworkManager.service --now
 
 # Set up starship for root
 mkdir -p /root/.config
