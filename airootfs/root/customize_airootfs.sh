@@ -22,16 +22,3 @@ cat > /etc/motd << EOF
 Welcome to Arch Greybeards Hall!
 A minimal KDE-based Arch Linux distribution.
 EOF
-
-# Create build user and install yay
-useradd -m -G wheel -s /bin/bash builder
-echo "builder ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/builder
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay
-chown -R builder:builder .
-sudo -u builder makepkg -si --noconfirm
-cd /
-rm -rf /tmp/yay
-userdel -r builder
-rm /etc/sudoers.d/builder
