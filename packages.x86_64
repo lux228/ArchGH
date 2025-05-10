@@ -138,6 +138,7 @@ starship
 # AUR Helper Dependencies
 base-devel
 git
+go
 
 # Additional Tools
 btop
