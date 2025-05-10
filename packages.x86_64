@@ -135,11 +135,9 @@ sddm-kcm
 fish
 starship
 
-# AUR Helper Dependencies
-base-devel
-git
-go
-
 # Additional Tools
 btop
 fastfetch
+
+# AUR Helper
+yay
