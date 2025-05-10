@@ -128,7 +128,6 @@ zsh
 
 # Desktop Environment
 plasma-meta
-plasma-wayland-session
 sddm
 sddm-kcm
 
